@@ -38,6 +38,12 @@
             <button type="submit" id="submit">Calculate</button>
         </form>
 
+        <!-- output -->
+        {% for i in range(engrav_input|length) %}
+        <p1>{{ engrav_input[i] }} {{ lvl_input[i] }}</p1><br>
+        {% endfor %}
+        <p1>Crit Chance: {{ crit_chance }}</p1><br>
+        <p1>Crit Damage: {{ crit_dmg }}</p1><br>
         <p1>Multiplier: {{ multiplier }}</p1>
         <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script type="text/javascript">
