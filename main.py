@@ -6,9 +6,6 @@ app=Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    #selections = request.form.get('select')
-    #form = Form()
-
     if request.method == "POST":
         #form = {'engravings': ['eng1', 'eng2', ---, ---, ...], 'lvl' = ['#', '#', ...],
         #        'crit-select': ['##' or ''], 'critdmg-select': ['##' or '']}
@@ -26,21 +23,10 @@ def index():
     else:
         crit_chance = 0
         crit_dmg = 200
-        multiplier = 1
+        multiplier = 1.0
 
         return render_template('index.html', engrav_list=engrav_list, multiplier=multiplier,
                                 crit_chance=crit_chance, crit_dmg=crit_dmg)
-
-# @app.route('/results', methods=['POST'])
-# def display_multiplier():
-#     #form = {'engravings': ['<eng1>', '<eng2>', ---, ---, ...], 'lvl' = ['<#>', '<#>', ...]}
-#     form = request.form.to_dict(flat=False)
-
-#     engrav_input = form["engravings"]
-#     lvl_input = [int(x) for x in form["lvl"] if x != '---']
-#     multiplier = final_dps(engravings=engrav_input, engrav_lvl=lvl_input).multiplier
-
-#     return render_template('results.html', multiplier=multiplier)
 
 if __name__ == '__main__':
     app.run(debug=True)

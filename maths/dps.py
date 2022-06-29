@@ -33,5 +33,3 @@ class final_dps:
         #print(self.c_rate, self.c_dmg, self.atk, self.damage, kbw)
         self.multiplier = get_multiplier(c_rate=self.c_rate, c_dmg=self.c_dmg,
                                          atk=self.atk, dmg=self.damage, kbw=kbw)
-
-#print(final_dps("Cursed Doll", "Grudge", engrav1_lvl=3, engrav2_lvl=2, c_rate=60).multiplier)
