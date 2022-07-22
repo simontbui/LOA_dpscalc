@@ -7,4 +7,4 @@ To run the app on Windows, follow these steps:
 3) Create a venv: `python3 -m venv venv`
 4) Activate the venv: `venv\Scripts\activate`
 5) `pip install -r requirements.txt`
-6) flask run
+6) `flask run`
