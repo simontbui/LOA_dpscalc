@@ -1,4 +1,4 @@
-# Still under construction!
+# This project was continued and redone with React.js. It is now under a private repo and has been deployed. Feel free to visit at https://www.trixion-calculator.com/.
 
 To run the app on Windows, follow these steps:
 
